@@ -68,16 +68,28 @@ h1, h2, h3, h4, h5, h6 {
 	float: left;
 }
 
-.navbar .nav > li > a {
-  color: @darkGrey;
-  text-shadow: none;
-  padding-left: 20px;
-  padding-right: 20px;
-  i {
-    font-size: 24px;
-  }
-  font-weight: 600;
+.navbar .brand:hover, .navbar .logo:hover {
+  	background-color: transparent;
 }
+
+.navbar .nav > li > a {
+	color: @darkGrey;
+	text-shadow: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	i {
+		font-size: 24px;
+	}
+	font-weight: 600;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.navbar .nav > li > a:hover {
+	background-color: @lightGrey;
+}
+
 
 .navbar-search {
 	margin-left: 20px;
