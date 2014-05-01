@@ -1,0 +1,93 @@
+@import "twitter/bootstrap/bootstrap";
+
+body { 
+	background-color: @lightGrey;
+	font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
+	padding-top: 80px;
+}
+
+@import "twitter/bootstrap/responsive";
+
+// Set the correct sprite paths
+@iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
+@iconWhiteSpritePath: image-url("twitter/bootstrap/glyphicons-halflings-white.png");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+@fontAwesomeEotPath: asset-url("fontawesome-webfont.eot");
+@fontAwesomeEotPath_iefix: asset-url("fontawesome-webfont.eot?#iefix");
+@fontAwesomeWoffPath: asset-url("fontawesome-webfont.woff");
+@fontAwesomeTtfPath: asset-url("fontawesome-webfont.ttf");
+@fontAwesomeSvgPath: asset-url("fontawesome-webfont.svg#fontawesomeregular");
+
+// Font Awesome
+@import "fontawesome/font-awesome";
+
+// Glyphicons
+//@import "twitter/bootstrap/sprites.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+
+@lightGrey: #eff2ea;
+@mediumGrey: #d0d5cb;
+@darkGrey: #6d6d6d;
+@white: #fff;
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: lighter;
+}
+
+.navbar-inner {
+	background-color: @white; /* background color will be black for all browsers */
+	background-image: none;
+	background-repeat: no-repeat;
+	filter: none;
+	height: 50px;
+	padding-top: 10px;
+}
+
+
+.navbar .brand {
+	color: black;
+	text-shadow: none;
+	letter-spacing: 0.1em;
+	margin-right: 20px;
+}
+
+.navbar .logo {
+	padding: 5px;
+	margin-right: 10px;
+	float: left;
+}
+
+.navbar .nav > li > a {
+  color: @darkGrey;
+  text-shadow: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  i {
+    font-size: 24px;
+  }
+  font-weight: 600;
+}
+
+.navbar-search {
+	margin-left: 20px;
+}
+
+@media (max-width: 970px) {
+	.navbar-inner {
+		height: 40px;
+	}
+}
+
+
+
